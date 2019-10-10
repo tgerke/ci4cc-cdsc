@@ -1,0 +1,93 @@
+---
+title: "The Collaborative Data Services Core <br> .smaller[Accelerating institutional research data access and usage]"
+subtitle: "<br>"
+author: "Travis Gerke, ScD"
+date: "Ci4CC 2019-10-15"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: moffitt-xaringan.css
+    seal: false
+    nature:
+      titleSlideClass: ["bottom", "left"]
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(
+  fig.width = 10, fig.height = 6, fig.retina = 2,
+  warning = FALSE, message = FALSE
+)
+```
+
+class: left bottom hide-count
+background-image: url(figures/moffittlogo.png)
+background-size: 22%
+background-position: bottom 5% right 5%
+
+<div class="talk-logo"></div>
+
+.talk-meta[
+.talk-title[
+# The Collaborative Data Services Core <br> .smaller[Accelerating institutional research data access and usage]
+]
+
+.talk-author[
+Travis Gerke, ScD<br>
+.small[@travisgerke]
+]
+
+.talk-date[
+<!--September 27, 2019-->
+]
+]
+
+```{css, echo=FALSE}
+.talk-logo {
+  width: 150px;
+  height: 174px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-image: url('figures/GerkeLab-300dpi.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.talk-meta {
+  font-family: Overpass;
+  position: absolute;
+  text-align: left;
+  bottom: 10px;
+  left: 25px;
+}
+.talk-author {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+.talk-date {
+  color: #666;
+  font-size: 1.25em;
+  line-height: 0;
+}
+
+.hide-count .remark-slide-number {
+  display: none;
+}
+
+```
+
+---
+
+background-image: url(figures/GerkeLab-300dpi.png)
+background-size: 70%
+background-position: bottom 20% center
+
+## Motivating example
