@@ -12,7 +12,7 @@
 
 
 
-class: center middle hide-count
+class: center middle hide-count hide-logo
 background-image: url(figures/moffittlogo.png)
 background-size: 22%
 background-position: bottom 5% right 5%
@@ -96,14 +96,28 @@ Travis Gerke, ScD
 .hide-count .remark-slide-number {
   display: none;
 }
-
 &lt;/style&gt;
 
 ---
 
-background-image: url(figures/moffittlogo.png)
-background-size: 15%
-background-position: bottom 2% right 7%
+## Organization and customer base
+
+Describe
+
+
+---
+class: hide-logo
+
+## Organization and customer base
+
+Hey, no logo here!
+
+```
+class: hide-logo
+```
+
+
+---
 
 ## Organization and customer base
 
@@ -174,6 +188,25 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<style>
+.logo {
+	background-image: url(figures/moffittlogo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0%;
+	left: 2%;
+	width: 152px;
+	height: 53px;
+	z-index: 0;
+}
+</style>
+
+<script>
+document.querySelectorAll('.remark-slide-content:not(.hide-logo)').forEach(el => {
+  el.innerHTML += '<div class="logo"></div>';
+});
+</script>
 
 <script>
 (function() {

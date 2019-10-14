@@ -8,6 +8,8 @@ output:
     lib_dir: libs
     css: moffitt-xaringan.css
     seal: false
+    includes:
+      after_body: insert-logo.html
     nature:
       titleSlideClass: ["bottom", "left"]
       slideNumberFormat: "%current%"
@@ -26,7 +28,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-class: center middle hide-count
+class: center middle hide-count hide-logo
 background-image: url(figures/moffittlogo.png)
 background-size: 22%
 background-position: bottom 5% right 5%
@@ -110,14 +112,28 @@ Travis Gerke, ScD
 .hide-count .remark-slide-number {
   display: none;
 }
-
 ```
 
 ---
 
-background-image: url(figures/moffittlogo.png)
-background-size: 15%
-background-position: bottom 2% right 7%
+## Organization and customer base
+
+Describe
+
+
+---
+class: hide-logo
+
+## Organization and customer base
+
+Hey, no logo here!
+
+```
+class: hide-logo
+```
+
+
+---
 
 ## Organization and customer base
 
