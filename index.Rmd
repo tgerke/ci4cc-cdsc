@@ -35,7 +35,7 @@ background-position: bottom 5% right 5%
 
 .talk-meta[
 .talk-title[
-# The Collaborative Data Services Core <br> .smaller[Accelerating institutional research data access and usage]
+# The Collaborative Data Services Core <br> .smaller[Accelerating institutional research data access, assembly, and usage]
 ]
 
 .talk-author[
@@ -50,12 +50,12 @@ Travis Gerke, ScD<br>
 
 ```{css, echo=FALSE}
 .talk-logo {
-  width: 150px;
-  height: 174px;
+  width: 175px;
+  height: 175px;
   position: absolute;
   top: 5%;
   left: 5%;
-  background-image: url('figures/GerkeLab-300dpi.png');
+  background-image: url('figures/cdsc-hex.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
