@@ -86,8 +86,11 @@ Travis Gerke, ScD<br>
 
 ---
 
-background-image: url(figures/GerkeLab-300dpi.png)
-background-size: 20%
-background-position: bottom 20% center
+background-image: url(figures/moffittlogo.png)
+background-size: 15%
+background-position: bottom 2% right 7%
 
-## Motivating example
+## Organization and customer base
+
+Describe
+
