@@ -1,0 +1,19 @@
+<style>
+.logo {
+	background-image: url(figures/moffittlogo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0%;
+	left: 2%;
+	width: 152px;
+	height: 53px;
+	z-index: 0;
+}
+</style>
+
+<script>
+document.querySelectorAll('.remark-slide-content:not(.hide-logo)').forEach(el => {
+  el.innerHTML += '<div class="logo"></div>';
+});
+</script>

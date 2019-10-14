@@ -8,6 +8,8 @@ output:
     lib_dir: libs
     css: moffitt-xaringan.css
     seal: false
+    includes:
+      after_body: insert-logo.html
     nature:
       titleSlideClass: ["bottom", "left"]
       slideNumberFormat: "%current%"
@@ -26,69 +28,112 @@ knitr::opts_chunk$set(
 )
 ```
 
-class: left bottom hide-count
+class: center middle hide-count hide-logo
 background-image: url(figures/moffittlogo.png)
 background-size: 22%
 background-position: bottom 5% right 5%
 
 <div class="talk-logo"></div>
 
-.talk-meta[
 .talk-title[
-# The Collaborative Data Services Core <br> .smaller[Accelerating institutional research data access, assembly, and usage]
+.talk-title-main.moffitt-blue[The Collaborative Data Services Core]
+
+.talk-title-sub.moffitt-light-blue[Accelerating institutional research data access, assembly, and usage]
 ]
 
+.talk-meta[
 .talk-author[
-Travis Gerke, ScD<br>
-.small[@travisgerke]
+Travis Gerke, ScD
 ]
-
 .talk-date[
-<!--September 27, 2019-->
+<!-- https://fontawesome.com/license -->
+<img src="figures/twitter-brands.svg" alt="Twitter logo" width="24px"/> @travisgerke
 ]
 ]
 
 ```{css, echo=FALSE}
 .talk-logo {
-  width: 175px;
-  height: 175px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 5%;
-  left: 5%;
+  left: calc(50% - 150px);
   background-image: url('figures/cdsc-hex.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+.talk-title {
+  font-family: Overpass;
+}
+.talk-title .talk-title-main {
+  font-size: 2.3em;
+  font-weight: bold;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+}
+.talk-title .talk-title-sub {
+  font-size: 1.28em;
+  position: absolute;
+  top: 66%;
+  width: 100%;
+  left: 0;
 }
 .talk-meta {
   font-family: Overpass;
   position: absolute;
   text-align: left;
-  bottom: 10px;
-  left: 25px;
+  bottom: 25px;
+  left: 35px;
+}
+.talk-meta p {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+.talk-title {
+  margin-bottom: 5em;
+  text-align: center;
 }
 .talk-author {
   color: #444;
   font-weight: bold;
   font-size: 1.5em;
   line-height: 1em;
+  margin-bottom: 0;
 }
 .talk-date {
   color: #666;
   font-size: 1.25em;
   line-height: 0;
+  margin-top: 0;
 }
 
 .hide-count .remark-slide-number {
   display: none;
 }
-
 ```
 
 ---
 
-background-image: url(figures/moffittlogo.png)
-background-size: 15%
-background-position: bottom 2% right 7%
+## Organization and customer base
+
+Describe
+
+
+---
+class: hide-logo
+
+## Organization and customer base
+
+Hey, no logo here!
+
+```
+class: hide-logo
+```
+
+
+---
 
 ## Organization and customer base
 
