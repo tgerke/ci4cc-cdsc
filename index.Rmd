@@ -116,26 +116,27 @@ Travis Gerke, ScD
 
 ---
 
-## Organization and customer base
+### What we do:
 
-Describe
+```{css, echo=FALSE}
+.fig1 {
+  width: 921px;
+  height: 614px;
+  position: absolute;
+  bottom: -1%;
+  right: 5%;
+  background-image: url('figures/qCountsType.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+```
 
+<div class="fig1"></div>
 
 ---
-class: hide-logo
 
-## Organization and customer base
-
-Hey, no logo here!
-
-```
-class: hide-logo
-```
+### How we do it:
 
 
----
 
-## Organization and customer base
-
-Describe
 
