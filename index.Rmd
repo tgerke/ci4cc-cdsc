@@ -306,3 +306,5 @@ icon_scaled <- function(name) {
 </div>
 </div>
 </div>
+
+<!-- made pdf version via xaringan::decktape("index.html", "Gerke-CDSC.pdf") -->
