@@ -146,11 +146,11 @@ partners -->
 ```{r, echo = FALSE}
 icons <- icon::icon_set("figures/icons/")
 
-members <- tibble(`Data Science` = c("Data quality analyst", 
-                                   "Data analyst",
+members <- tibble(`Data Science` = c("Data analyst",
                                    "Data analyst",
                                    "Data analyst",
                                    "Scientific programmer",
+                                   "Data quality analyst", 
                                    "Spoke level honest broker",
                                    "Spoke level honest broker",
                                    "Spoke level honest broker"),
@@ -162,11 +162,11 @@ members <- tibble(`Data Science` = c("Data quality analyst",
                                   "Database abstractor PRN",
                                   rep(" ", 2)),
                   Management = c("Scientific director",
-                                 "Project manager",
-                                 "Intake/regulatory specialist",
-                                 "Operations supervisor",
                                  "Core facility manager",
                                  "Staff scientist",
+                                 "Project manager",
+                                 "Operations supervisor",
+                                 "Intake/regulatory specialist",
                                  rep(" ", 2)))
 gt(members) %>%
   cols_label(
