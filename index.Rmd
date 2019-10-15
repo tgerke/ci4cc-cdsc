@@ -144,6 +144,8 @@ partners -->
 ### How we do it:
 
 ```{r, echo = FALSE}
+icons <- icon::icon_set("figures/icons/")
+
 members <- tibble(`Data Science` = c("Data quality analyst", 
                                    "Data analyst",
                                    "Data analyst",
@@ -166,7 +168,15 @@ members <- tibble(`Data Science` = c("Data quality analyst",
                                  "Core facility manager",
                                  "Staff scientist",
                                  rep(" ", 2)))
-gt(members)
+gt(members) %>%
+  cols_label(
+    `Data Science` = html(paste("Data Science<br>", 
+                                icons$laptop_code_solid %>% icon::icon_style(scale = 1.5))),
+    `Abstraction` = html(paste("Abstraction<br>", 
+                               icons$notes_medical_solid %>% icon::icon_style(scale = 1.5))),
+    `Management` = html(paste("Management<br>", 
+                              icons$tasks_solid %>% icon::icon_style(scale = 1.5)))
+  )
 ```
 
 
