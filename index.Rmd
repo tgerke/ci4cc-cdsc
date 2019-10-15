@@ -6,7 +6,7 @@ date: "Ci4CC 2019-10-15"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: moffitt-xaringan.css
+    css: [moffitt-xaringan.css, weepeople.css]
     seal: false
     includes:
       after_body: insert-logo.html
@@ -140,6 +140,7 @@ partners -->
 <div class="fig1"></div>
 
 ---
+exclude: true
 
 ### How we do it:
 
@@ -180,3 +181,128 @@ gt(members) %>%
 ```
 
 
+---
+
+## How we do it
+
+```{css echo=FALSE}
+.people__row {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-gap: 1em;
+	align-items: center;
+}
+.people__row + .people__row {
+  margin-top: 2em;
+}
+.people__groups {
+  display: flex;
+  justify-content: space-around;
+}
+.people__group .weepeople {
+	font-size: 3em;
+}
+.people__group {
+	text-align: center;
+}
+.people__label {
+  color: #666;
+  font-family: Overpass;
+  line-height: 1;
+}
+.people__group__label {
+	text-align: center;
+}
+.people__group__label > * {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: ;
+}
+```
+
+```{r echo=FALSE, include=FALSE}
+icon_scaled <- function(name) {
+  icons <- icon::icon_set("figures/icons/")
+  icon::icon_style(
+    scale = 1.5,
+    icons(name)
+  )
+}
+```
+
+<div class="people__row">
+<div class="people__group__label">
+`r icon_scaled("laptop_code_solid")`
+<h4>Data Science</h4>
+</div>
+<div class="people__groups">
+<div class="people__group">
+<div class="weepeople moffitt-blue">A</div>
+<div class="people__label">Data Quality Analyst</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-blue">bbb</div>
+<div class="people__label">Data Analyst</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-blue">C</div>
+<div class="people__label">Scientific Programmer</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-blue">eEe</div>
+<div class="people__label">Spoke-Level Honest&nbsp;Broker</div>
+</div>
+</div>
+</div>
+
+<div class="people__row">
+<div class="people__group__label">
+`r icon_scaled("notes_medical_solid")`
+<h4>Abstraction</h4>
+</div>
+<div class="people__groups">
+<div class="people__group">
+<div class="weepeople moffitt-red">uuu</div>
+<div class="people__label">Database Abstractor</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-red">qqq</div>
+<div class="people__label">Database Abstractor PRN</div>
+</div>
+</div>
+</div>
+
+
+<div class="people__row">
+<div class="people__group__label">
+`r icon_scaled("tasks_solid")`
+<h4>Management</h4>
+</div>
+<div class="people__groups">
+<div class="people__group">
+<div class="weepeople moffitt-green">O</div>
+<div class="people__label">Scientific Director</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-green">M</div>
+<div class="people__label">Project Manager</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-green">s</div>
+<div class="people__label">Regulatory Specialist</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-green">P</div>
+<div class="people__label">Operations Supervisor</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-green">Q</div>
+<div class="people__label">Core Facility Manager</div>
+</div>
+<div class="people__group">
+<div class="weepeople moffitt-green">i</div>
+<div class="people__label">Staff Scientist</div>
+</div>
+</div>
+</div>
