@@ -26,6 +26,9 @@ knitr::opts_chunk$set(
   fig.width = 10, fig.height = 6, fig.retina = 2,
   warning = FALSE, message = FALSE
 )
+
+library(tidyverse)
+library(gt)
 ```
 
 class: center middle hide-count hide-logo
@@ -117,6 +120,9 @@ Travis Gerke, ScD
 ---
 
 ### What we do:
+<!-- Approx 90% of our usage comes from Moffitt's 5 academic research programs, 
+with the remainder comprised of non-member collaborators, e.g. industry or pharma
+partners -->
 
 ```{css, echo=FALSE}
 .fig1 {
@@ -137,6 +143,30 @@ Travis Gerke, ScD
 
 ### How we do it:
 
-
+```{r, echo = FALSE}
+members <- tibble(`Data Science` = c("Data quality analyst", 
+                                   "Data analyst",
+                                   "Data analyst",
+                                   "Data analyst",
+                                   "Scientific programmer",
+                                   "Spoke level honest broker",
+                                   "Spoke level honest broker",
+                                   "Spoke level honest broker"),
+                  Abstraction = c("Database abstractor",
+                                  "Database abstractor",
+                                  "Database abstractor",
+                                  "Database abstractor PRN",
+                                  "Database abstractor PRN",
+                                  "Database abstractor PRN",
+                                  rep(" ", 2)),
+                  Management = c("Scientific director",
+                                 "Project manager",
+                                 "Intake/regulatory specialist",
+                                 "Operations supervisor",
+                                 "Core facility manager",
+                                 "Staff scientist",
+                                 rep(" ", 2)))
+gt(members)
+```
 
 
