@@ -1,8 +1,8 @@
 ## The Collaborative Data Services Core: Accelerating institutional research data access and usage
 
-[slides]: https://ci4cc-cdsc.netlify.com/
+[slides]: https://tgerke.github.io/ci4cc-cdsc/
 
-SLIDES IN PROGRESS: This is a 10-minute talk which provides a high-level overview of Moffitt's Collaborative Data Services Core.
+This is a 10-minute talk which provides a high-level overview of Moffitt's Collaborative Data Services Core.
 
 &#x1F4FA; [View slides][slides]
 
